@@ -28,8 +28,8 @@ export default function Home() {
   return (
     <div className="w-full">
       <section className="p-24 flex flex-col justify-center items-center gap-28 w-full">
-        <div className="flex items-center gap-20 bg-transparent">
-          <div className="flex flex-wrap items-center justify-center bg-transparent">
+        <div className="flex flex-wrap justify-center items-center gap-20 bg-transparent">
+          <div className="flex items-center justify-center bg-transparent">
             <div>
               <motion.div
                 initial={{ opacity: 0, scale: 0 }}

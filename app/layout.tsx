@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import ActiveSectionContextProvider from "@/context/activeSectionContext";
 import logo from "@/public/logo.png";
 import { Inter } from "next/font/google";
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className=" bg-[#FDF7F5]">
       <body className={` relative ${inter.className} `}>
-        <div className="fixed hidden flex justify-center items-center top-10 left-10 sm:block">
+        <div className="fixed hidden top-10 left-10 sm:block">
           <Image
             src={logo}
             alt="Logo du studio du Chrissy Ottenhof"
@@ -35,6 +36,7 @@ export default function RootLayout({
           <main className="flex flex-col items-center min-h-screen mt-28 ">
             <Header />
             {children}
+            <Footer />
           </main>
         </ActiveSectionContextProvider>
       </body>

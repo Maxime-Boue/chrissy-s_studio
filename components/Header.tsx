@@ -10,10 +10,10 @@ const Header = () => {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
   return (
-    <header className="flex justify-center relative z-999">
-      <div className="fixed top-0 sm:top-3 w-full h-[3rem] sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full border border-white backdrop-blur-[0.5rem] bg-opacity-10 rounded-none bg-white shadow-lg">
-        <nav className="flex justify-center sm:h-full sm:text-sm">
-          <ul className="flex items-center gap-8 text-gray-800 uppercase">
+    <header className="flex justify-center items-center relative z-999">
+      <div className="fixed top-0 sm:top-3 w-full h-[6rem] sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full border border-white backdrop-blur-[0.5rem] bg-opacity-10 rounded-none bg-white shadow-lg">
+        <nav className="flex justify-center items-center sm:h-full sm:text-sm">
+          <ul className="flex justify-center items-center flex-wrap sm:gap-8 text-gray-800 uppercase">
             {links.map((link) => (
               <motion.li
                 key={link.hash}
